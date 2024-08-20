@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Zapatillas</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="/styles/styles.css">
+    
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="/index.html">
+            <img src="/img/logo.png" alt="Logo de la Tienda" style="height: 100px;">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="nav">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item"><a class="nav-link" href="/index.html">Inicio</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="zapDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Zapatillas</a>
+                    <div class="dropdown-menu" aria-labelledby="zapDropdown">
+                        <a class="dropdown-item" href="/zapa_hombre.html">Hombre</a>
+                        <a class="dropdown-item" href="/zapa_mujer.html">Mujer</a>
+                        <a class="dropdown-item" href="/zapa_niño.html">Niño</a>
+                    </div>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="/accesorios.html">Accesorios</a></li>
+                <li class="nav-item"><a class="nav-link" href="/locales.html">Locales</a></li>
+                <li class="nav-item"><a class="nav-link" href="/talles.html">Talles</a></li>
+            </ul>
+            <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="cartDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="fas fa-shopping-cart"></i> <span id="cart-count" class="badge badge-pill badge-danger">0</span>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="cartDropdown">
+                    <h6 class="dropdown-header">Carrito de Compras</h6>
+                    <div id="cart-items"></div>
+                    <div class="dropdown-divider"></div>
+                    <span id="total-price" class="dropdown-header font-weight-bold">Total: $0.00</span>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item text-center" href="/cart.html">Ver carrito</a>
+                </div>
+            </li>
+                <li class="nav-item">
+                    <a class="btn btn-primary nav-link" href="/login.html">Login</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <div class="jumbotron bg-transparent text-white text-center">
+            <h1 class="display-4">Zapatillas para Niños</h1>
+            <p class="lead">Encuentra las mejores zapatillas deportivas para hombres.</p>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="/img/zapan/z1/1.jpg"card-img-top" alt="Jordan Mid">
+                    <div class="card-body">
+                        <h5 class="card-title">Nike Court</h5>
+                        <p class="card-text">Nike court - White & Pink.</p>
+                        <p class="card-text">Precio: $80.00</p>
+                        <a href="/productos/zapa_ni/prod1.html" class="btn btn-primary">Ver más</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="/img/zapan/z2/4.jpg" class="card-img-top" alt="Jordan Mid">
+                    <div class="card-body">
+                        <h5 class="card-title">Nike Revolution 7</h5>
+                        <p class="card-text">Nike Revolution 7 - black&white.</p>
+                        <p class="card-text">Precio: $90</p>
+                        <a href="productos/zapa_ni/prod2.html" class="btn btn-primary">Ver más</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="/img/zapan/z3/7.jpg" class="card-img-top" alt="Jordan Mid">
+                    <div class="card-body">
+                        <h5 class="card-title">Air Jordan 1 High</h5>
+                        <p class="card-text">Air Jordan 1 High - black&red.</p>
+                        <p class="card-text">Precio: $100.00</p>
+                        <a href="productos/zapa_ni/prod3.html" class="btn btn-primary">Ver más</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="/img/zapan/z4/1.jpg" class="card-img-top" alt="Jordan Mid">
+                    <div class="card-body">
+                        <h5 class="card-title">Nike Court Borough</h5>
+                        <p class="card-text">Nike Court Borough - blue&white.</p>
+                        <p class="card-text">Precio: $65.00</p>
+                        <a href="productos/zapa_ni/prod4.html" class="btn btn-primary">Ver más</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="/img/zapan/z5/1.jpg" class="card-img-top" alt="Jordan Mid">
+                    <div class="card-body">
+                        <h5 class="card-title">Nike Air Force 1 SE</h5>
+                        <p class="card-text">Nike Air Force 1 SE - Sand&White.</p>
+                        <p class="card-text">Precio: $120.00</p>
+                        <a href="productos/zapa_ni/prod5.html" class="btn btn-primary">Ver más</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="/img/zapan/z6/1.jpg" class="card-img-top" alt="Jordan Mid">
+                    <div class="card-body">
+                        <h5 class="card-title">Air Jordan 1 Low</h5>
+                        <p class="card-text">Air Jordan 1 Low - black&blue.</p>
+                        <p class="card-text">Precio: $160.00</p>
+                        <a href="productos/zapa_ni/prod6.html" class="btn btn-primary">Ver más</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="/img/zapan/z7/1.jpg" class="card-img-top" alt="Jordan Mid">
+                    <div class="card-body">
+                        <h5 class="card-title">Adidas Forum Low</h5>
+                        <p class="card-text">Adidas Forum Low - Simpsons.</p>
+                        <p class="card-text">Precio: $82.00</p>
+                        <a href="productos/zapa_ni/prod7.html" class="btn btn-primary">Ver más</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="/img/zapan/z8/1.jpg" class="card-img-top" alt="Jordan Mid">
+                    <div class="card-body">
+                        <h5 class="card-title">Puma Suede Clasic</h5>
+                        <p class="card-text">Puma Suede Clasic - black&white.</p>
+                        <p class="card-text">Precio: $64.00</p>
+                        <a href="productos/zapa_ni/prod8.html" class="btn btn-primary">Ver más</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="/img/zapan/z9/1.jpg" class="card-img-top" alt="Jordan Mid">
+                    <div class="card-body">
+                        <h5 class="card-title">Adidas Forum Low</h5>
+                        <p class="card-text">Adidas Forum Low - Simpsons.</p>
+                        <p class="card-text">Precio: $82.00</p>
+                        <a href="productos/zapa_ni/prod9.html" class="btn btn-primary">Ver más</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="/img/zapan/z10/1.jpg" class="card-img-top" alt="Jordan Mid">
+                    <div class="card-body">
+                        <h5 class="card-title">Adidas Originals Superstar</h5>
+                        <p class="card-text">Adidas Originals Superstar - Cat.</p>
+                        <p class="card-text">Precio: $77.00</p>
+                        <a href="productos/zapa_ni/prod10.html" class="btn btn-primary">Ver más</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="/img/zapan/z11/1.jpg" class="card-img-top" alt="Jordan Mid">
+                    <div class="card-body">
+                        <h5 class="card-title">Adidas Originals Superstar</h5>
+                        <p class="card-text">Adidas Originals Superstar - White&Black.</p>
+                        <p class="card-text">Precio: $77.00</p>
+                        <a href="productos/zapa_ni/prod11.html" class="btn btn-primary">Ver más</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="/img/zapan/z12/1.jpg" class="card-img-top" alt="Jordan Mid">
+                    <div class="card-body">
+                        <h5 class="card-title">Puma Suede Clasic </h5>
+                        <p class="card-text">Puma Suede Clasic - White&Red.</p>
+                        <p class="card-text">Precio: $64.00</p>
+                        <a href="productos/zapa_ni/prod12.html" class="btn btn-primary">Ver más</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-light text-center py-3">
+        <p>&copy; 2024 Tienda de Zapatillas. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="/scripts/script.js"></script>
+    <script src="/scripts/cart.js"></script>
+</body>
+</html>

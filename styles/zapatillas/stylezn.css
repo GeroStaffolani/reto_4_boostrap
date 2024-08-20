@@ -1,0 +1,38 @@
+body {
+    background-image: url('/img/zapa.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+  }
+  
+  .card-img-top {
+    object-fit: cover;
+  }
+  
+  .col-md-4 {
+    width: 15%;
+    padding: 1%;
+  }
+  
+  .row {
+    margin: 0;
+  }
+  
+  .card-body {
+    height: 50%;
+  }
+  
+  .d-flex {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .flex-grow-1 {
+    flex-grow: 1;
+  }
+  
+  .min-vh-100 {
+    min-height: 100vh;
+  }
+  

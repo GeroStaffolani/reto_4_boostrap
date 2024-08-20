@@ -1,0 +1,178 @@
+
+.form-container {
+    max-width: 320px;
+    border-radius: 0.75rem;
+    background-color: #00000071;
+    padding: 2rem;
+    color: #f3f4f6;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 60px;
+}
+
+.title {
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 700;
+}
+
+.form {
+    margin-top: 1.5rem;
+}
+
+.input-group {
+    margin-top: 0.25rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+}
+
+.input-group label {
+    display: block;
+    color: #9ca3af;
+    margin-bottom: 4px;
+}
+
+.input-group input {
+    width: 100%;
+    border-radius: 0.375rem;
+    border: 1px solid #374151;
+    outline: 0;
+}
+   
+.footer-custom {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+  }
+
+  /* #111827 
+
+/* Media Queries para Tablets */
+@media (min-width: 768px) and (max-width: 1024px) {
+    /* Asegurar que html y body ocupen toda la pantalla */
+    html, body {
+        height: 100%;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Hacer que el contenedor principal crezca */
+    .form-container {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* Centra el contenido verticalmente */
+    }
+
+    /* Mantén el footer al fondo */
+    .footer-custom {
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding: 1rem 0;
+        margin-top: auto;
+        width: 100%;
+    }
+    .col-md-4 {
+        width: 50%; /* Las tarjetas ocuparán el 50% del ancho en tablets */
+        padding: 10px;
+    }
+
+    .navbar-brand img {
+      height: 80px; /* Ajustar el tamaño del logo en tablets */
+    }
+
+    .jumbotron h1 {
+      font-size: 32px; /* Ajustar el tamaño del título en tablets */
+    }
+
+    .jumbotron p {
+      font-size: 18px; /* Ajustar el tamaño del texto en tablets */
+    }
+
+    .footer-custom {
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding: 1rem 0;
+        margin-top: 2rem; /* Ajusta el valor según sea necesario */
+        width: 100%;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    html, body {
+        height: 100%;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Hacer que el contenedor principal crezca */
+    .form-container {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* Centra el contenido verticalmente */
+    }
+
+    /* Mantén el footer al fondo */
+    .footer-custom {
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding: 1rem 0;
+        margin-top: auto;
+        width: 100%;
+    }
+    
+    .navbar-brand img {
+      height: 60px; /* Reducir el tamaño del logo en dispositivos móviles */
+    }
+
+    .col-md-4 {
+        width: 100%; /* Las tarjetas ocuparán el 100% del ancho en dispositivos móviles */
+        padding: 10px;
+    }
+  
+    .card-img-top {
+      object-fit: cover; /* Asegura que las imágenes se redimensionen correctamente */
+      height: auto;
+    }
+  
+    .card-body {
+      height: auto; /* Permitir que el contenido de la tarjeta se ajuste */
+    }
+  
+    .jumbotron h1 {
+      font-size: 24px; /* Reducir el tamaño del título en pantallas pequeñas */
+    }
+  
+    .jumbotron p {
+      font-size: 16px; /* Reducir el tamaño del texto en pantallas pequeñas */
+    }
+  
+    /* Ajustes para la navegación */
+    .navbar-nav {
+      text-align: center; /* Centrar los enlaces en la navegación */
+    }
+  
+    .footer-custom {
+      background-color: black;
+      color: white;
+      text-align: center;
+      padding: 1rem 0;
+      margin-top: 2rem; /* Ajusta el valor según sea necesario */
+      width: 100%;
+      font-size: 14px;
+    }
+  
+    .carousel-inner {
+      padding-bottom: 5%;
+      border-radius: 8px;
+    }
+  }

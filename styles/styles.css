@@ -1,0 +1,198 @@
+/* Asegura que el cuerpo ocupe el 100% de la altura y que el footer esté al final */
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Estilo del body */
+body {
+  background-color: #83848a;
+  background-image: radial-gradient(at 85% 37%, rgb(7, 3, 2) 0px, transparent 30%),
+                    radial-gradient(at 44% 40%, rgb(58, 23, 90) 0px, transparent 30%),
+                    radial-gradient(at 57% 84%, hsla(120, 74%, 3%, 1) 0px, transparent 30%),
+                    radial-gradient(at 85% 47%, hsla(275, 100%, 2%, 0.7) 0px, transparent 30%),
+                    radial-gradient(at 19% 5%, rgb(31, 61, 105) 0px, transparent 30%);
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: 'Roboto', sans-serif;
+  color: #000000; /* Cambia el color del texto del body aquí */
+  display: flex;
+  flex-direction: column;
+}
+
+.index-page {
+  color: #333; /* Cambia este color por el deseado para la página principal */
+}
+
+.product-page{
+  color: #fafafa; /* Cambia este color por el deseado para la página de "sobre nosotros" */
+}
+
+.img-fluid {
+  padding-top: 5%;
+  border-radius: 10px;
+}
+
+/* Estilo del footer para que se mantenga al fondo */
+.footer-custom {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: auto;
+  width: 100%;
+}
+
+.card-img-top {
+  object-fit: 50%;
+}
+
+.col-md-4 {
+  width: 15%;
+  padding: 1%;
+}
+
+.row {
+  margin: 0;
+}
+
+.card-body {
+  height: 50%;
+}
+
+.d-flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-grow-1 {
+  flex-grow: 1;
+}
+
+.min-vh-100 {
+  min-height: 100vh;
+}
+
+.jumbotron h1 {
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+}
+
+.jumbotron p {
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+}
+
+.nav-item .btn-primary.nav-link {
+  background-color: #7c7c7d;
+  color: white;
+  border-color: #7c7c7d;
+}
+
+.nav-item .btn-primary.nav-link:hover {
+  background-color: #4b4948;
+  color: rgb(255, 255, 255);
+  border-color: #4b4948;
+}
+
+/* Personaliza el color de las flechas del carrusel */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: black;
+  border-radius: 50%;
+}
+
+/* Ajusta el tamaño de las flechas si es necesario */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-size: 100%, 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 40px; /* Ajusta el tamaño según sea necesario */
+  height: 40px; /* Ajusta el tamaño según sea necesario */
+}
+
+.carousel-inner {
+  border-radius: 8px;
+}
+
+/* Media Queries para Mobile */
+@media (max-width: 768px) {
+  .navbar-brand img {
+    height: 60px; /* Reducir el tamaño del logo en dispositivos móviles */
+  }
+  .col-md-4 {
+    width: 100%; /* Las tarjetas ocuparán el 100% del ancho en dispositivos móviles */
+    padding: 10px;
+  }
+
+  .card-img-top {
+    object-fit: cover; /* Asegura que las imágenes se redimensionen correctamente */
+    height: auto;
+  }
+
+  .card-body {
+    height: auto; /* Permitir que el contenido de la tarjeta se ajuste */
+  }
+
+  .jumbotron h1 {
+    font-size: 24px; /* Reducir el tamaño del título en pantallas pequeñas */
+  }
+
+  .jumbotron p {
+    font-size: 16px; /* Reducir el tamaño del texto en pantallas pequeñas */
+  }
+
+  /* Ajustes para la navegación */
+  .navbar-nav {
+    text-align: center; /* Centrar los enlaces en la navegación */
+  }
+
+  .footer-custom {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem; /* Ajusta el valor según sea necesario */
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .carousel-inner {
+    padding-bottom: 5%;
+    border-radius: 8px;
+  }
+}
+
+/* Media Queries para Tablets */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .col-md-4 {
+    width: 50%; /* Las tarjetas ocuparán el 50% del ancho en tablets */
+    padding: 10px;
+  }
+
+  .navbar-brand img {
+    height: 80px; /* Ajustar el tamaño del logo en tablets */
+  }
+
+  .jumbotron h1 {
+    font-size: 32px; /* Ajustar el tamaño del título en tablets */
+  }
+
+  .jumbotron p {
+    font-size: 18px; /* Ajustar el tamaño del texto en tablets */
+  }
+
+  .footer-custom {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem; /* Ajusta el valor según sea necesario */
+    width: 100%;
+    font-size: 14px;
+  }
+}
+
